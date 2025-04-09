@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{D640B86F-0AA1-4C96-A554-CAC8BAE9FBE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoInator", "ToDoInator\ToDoInator.csproj", "{2636C1B3-4643-4A41-B398-22F6F565DCC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +29,23 @@ Global
 		{D640B86F-0AA1-4C96-A554-CAC8BAE9FBE1}.Release|x64.Build.0 = Release|Any CPU
 		{D640B86F-0AA1-4C96-A554-CAC8BAE9FBE1}.Release|x86.ActiveCfg = Release|Any CPU
 		{D640B86F-0AA1-4C96-A554-CAC8BAE9FBE1}.Release|x86.Build.0 = Release|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Debug|x64.Build.0 = Debug|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Debug|x86.Build.0 = Debug|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Release|x64.ActiveCfg = Release|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Release|x64.Build.0 = Release|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Release|x86.ActiveCfg = Release|Any CPU
+		{2636C1B3-4643-4A41-B398-22F6F565DCC7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E10E8156-C138-4AB4-B491-36649BC10610}
 	EndGlobalSection
 EndGlobal

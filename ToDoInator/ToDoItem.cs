@@ -1,8 +1,7 @@
 ﻿// Klasse = Eigener Datentyp 
 public class ToDoItem
 {
-    // KLassen definieren Variablen (Daten) und Methoden 
-    //(Funktionalität)
+    // KLassen definieren Variablen (Daten) und Methoden (Funktionalität)
     // Variablen könne Felder (Fields) oder Eigenschaften (Properties) sein
     // Felder sind Privat  --> Klassenintern
     // Eigenschaften ist public --> Kann von ausen aufgerufen werden 

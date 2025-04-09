@@ -1,11 +1,11 @@
-﻿
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
+
 public class Algorithms
 {
-    int[] cards; //deklaratione
+    int[] cards; // Deklaration
     public Algorithms()
     {
-        cards = new int[50000000]; // inizialisierung
+        cards = new int[50_000_000]; // Initialisierung
         for (int i = 0; i < cards.Length; i++)
         {
             cards[i] = i + 1;
@@ -18,9 +18,13 @@ public class Algorithms
         FindCardLocationBinarySearch(cards, 49_942_069); // 49_942_068
     }
     [Benchmark]
-    public void TestLinearySearch()
+    public void TestLinearSearch()
     {
         FindCardLocationLinearSearch(cards, 49_942_069); // 49_942_068
+    }
+    public static int[] InsertionSort(int[] unsortedArray)
+    {
+        return new int[0];
     }
     public static int FindCardLocationBinarySearch(int[] cards, int query)
     {
@@ -48,7 +52,6 @@ public class Algorithms
     }
 
     // Linear Search => O(n)
-
     public static int FindCardLocationLinearSearch(int[] cards, int query)
     {
         /*
@@ -68,7 +71,7 @@ public class Algorithms
         return -1;
     }
 
-
+}
 
 
 

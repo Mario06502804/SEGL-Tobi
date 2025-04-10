@@ -1,8 +1,10 @@
-﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Attributes;
+using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsWPF;
 
 public class Algorithms
 {
     int[] cards; // Deklaration
+    int[] unsortedArray;
     public Algorithms()
     {
         cards = new int[50_000_000]; // Initialisierung
@@ -10,6 +12,18 @@ public class Algorithms
         {
             cards[i] = i + 1;
         }
+        // create large unsorted array with random numbers
+        Random random = new Random();
+        unsortedArray = new int[5_000];
+        for (int i = 0; i < unsortedArray.Length; i++)
+        {
+            unsortedArray[i] = random.Next(1, 100_000);
+        }
+    }
+    [Benchmark]
+    public void TestInsertionSort()
+    {
+        InsertionSort(unsortedArray); // O(n^2)
     }
     // Binary Search => O(log(n))
     [Benchmark]
@@ -24,7 +38,17 @@ public class Algorithms
     }
     public static int[] InsertionSort(int[] unsortedArray)
     {
-        return new int[0];
+        /*
+        Definiere Variable "i" und initialisiere mit Wert 1
+        Wiederhole bis "i" gleich "unsortedArray" length:
+            Definiere Variable "j" und initialisiere mit Wert i - 1
+            Definiere Variable "key" und initialisiere mit Wert "unsortedArray" an "i"
+            Wiederhole bis "j" größer oder gleich 0 und "unsortedArray" an "j" größer als "key":
+                Setze "unsortedArray" an "j + 1" gleich "unsortedArray" an "j"
+                Dekrementiere j um 1
+            Setze "unsortedArray" an "j + 1" gleich key
+            Inkrementiere i um 1
+        */
     }
     public static int FindCardLocationBinarySearch(int[] cards, int query)
     {
@@ -72,6 +96,3 @@ public class Algorithms
     }
 
 }
-
-
-

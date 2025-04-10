@@ -1,18 +1,16 @@
-﻿// Klasse = Eigener Datentyp 
-public class ToDoItem
+// Klasse => Eigener Datentyp
+public class TodoItem
 {
-    // KLassen definieren Variablen (Daten) und Methoden (Funktionalität)
-    // Variablen könne Felder (Fields) oder Eigenschaften (Properties) sein
-    // Felder sind Privat  --> Klassenintern
-    // Eigenschaften ist public --> Kann von ausen aufgerufen werden 
+    // Klassen definieren Variablen (Daten) und Methoden (Funktionalität)
+    // Variablen können Felder (Fields) oder Eigenschaften (Properties) sein
+    // Felder sind privat -> Klassenintern
+    // Eigenschaft ist public -> Kann von außen aufgerufen werden
     public string Description { get; set; }
     public int Prio { get; set; }
 
-
-    // instanz-Methode => myTodo.ToString();
+    // Instanz-Methode => myTodo.ToString();
     public override string ToString()
     {
         return $"{Description} - {Prio}";
     }
 }
-

@@ -1,7 +1,7 @@
 # GIT in einer Nussschale
 
 - `git clone` - klont ein Gitrepo
-- `git status` - zeigt ämderungrn seit letzten commit
+- `git status` - zeigt änderungen seit letzten commit
 - `git add .` fügt alle änderungen zur Staging area
 - `git commit -m "nachicht"` - erstellt einen neuen commit
 - `git push` - schiebt commits zu github
